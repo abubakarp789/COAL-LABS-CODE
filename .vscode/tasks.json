@@ -1,0 +1,20 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+		{
+			"label": "MASM: Assemble and Link",
+			"type": "shell",
+			"command": "ml.exe",
+			"args": [
+				"lab#03.asm",
+				"/link",
+				"/ENTRY:main",
+				"/SUBSYSTEM:CONSOLE"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			}
+		},
+	]
+}
